@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cthanh</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/leanhducprovn/cdn/font-awesome/pro-5.15.3/css/all.css" rel="stylesheet">
+</head>
+
+<body><body>
+    <div id="root">
+        <div id="main">
+            <div class="container">
+                <header>
+                    <div id="cover-image" style="background-image: url('./images/background.gif');"></div>
+                    <div id="profile-header">
+                        <div id="avatar-image" style="background-image: url('./images/admin.jpg');"></div>
+                        <div id="name">
+                            <p id="first-name" class="names">Công Thành<i style="color:rgb(17, 143, 249)" title="Đã xác minh" class="fad fa-badge-check"></i></p>
+                            <p id="nickname" class="nicknames">(CgT)</p>
+                            <div id="skills">
+                                <div class="skill-item" style="color:#3590ac;">project remaker</div>
+                                <div class="skill-item" style="color:#4db854;">medical staff</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bio-story">
+                        <div class="bio-story-thumb" style="background-image: url('./images/favicon.png');"></div>
+                        <div class="bio-story-content" style="margin-top: 6px;">
+                            <p>Contact me</p>
+                            <span onclick="window.open('http://159.223.87.186/')">All Code Demo</span>
+                        </div>
+                    </div>
+
+                </header>
+
+                <div id="content-body">
+                    <p class="drop-title">Liên kết cá nhân</p>
+                    <div id="link-box">
+
+                        <div class="link-item">
+                            <div class="bio-story-thumb" style="background-image: url('./images/facebook.jpg');"></div>
+                            <div class="link-content">
+                                <p>Facebook</p>
+                                <span onclick="window.open('https://www.facebook.com/congthanh.nhism2809/', '_blank')">@congthanh.nhism2809</span>
+                            </div>
+                            <div class="link-btn">
+                                <div class="link-btn-chill light-orange" onclick="window.open('https://www.facebook.com/congthanh.nhism2809/', '_blank')">OPEN</div>
+                            </div>
+                        </div>
+
+                        <div class="link-item">
+                            <div class="bio-story-thumb" style="background-image: url('./images/instagram.png');"></div>
+                            <div class="link-content">
+                                <p>Instagram</p>
+                                <span onclick="window.open('https://www.instagram.com/trdyc_thanh/', '_blank')">@trdyc_thanh</span>
+                            </div>
+                            <div class="link-btn">
+                                <div class="link-btn-chill light-orange" onclick="window.open('https://www.instagram.com/trdyc_thanh/', '_blank')">OPEN</div>
+                            </div>
+                        </div>
+
+                        <div class="link-item">
+                            <div class="bio-story-thumb" style="background-image: url('./images/GitHub.png');"></div>
+                            <div class="link-content">
+                                <p>GitHub</p>
+                                <span onclick="window.open('https://github.com/TuiLaThanhNe', '_blank')">@TuiLaThanhNe</span>
+                            </div>
+                            <div class="link-btn">
+                                <div class="link-btn-chill light-orange" onclick="window.open('https://github.com/TuiLaThanhNe', '_blank')">OPEN</div>
+                            </div>
+                        </div>
+
+                        <div class="link-item">
+                            <div class="bio-story-thumb" style="background-image: url('./images/zalo.jpg');"></div>
+                            <div class="link-content">
+                                <p>Zalo</p>
+                                <span onclick="window.open('https://zalo.me/0987664301', '_blank')">0987664301</span>
+                            </div>
+                            <div class="link-btn">
+                                <div class="link-btn-chill light-orange" onclick="window.open('https://zalo.me/0987664301', '_blank')">OPEN</div>
+                            </div>
+                        </div>
+
+                        <div class="link-item">
+                            <div class="bio-story-thumb" style="background-image: url('./images/gmail.jpg');"></div>
+                            <div class="link-content">
+                                <p>Gmail</p>
+                                <span onclick="geturl('congthanh28924@gmail.com')">congthanh28924@gmail.com</span>
+                            </div>
+                            <div class="link-btn">
+                                <div class="link-btn-chill light-blue" onclick="geturl('congthanh28924@gmail.com')">COPY</div>
+                            </div>
+                        </div>
+
+                        <div class="link-item">
+                            <div class="bio-story-thumb" style="background-image: url('./images/phone.jpg');"></div>
+                            <div class="link-content">
+                                <p>Hotline</p>
+                                <span onclick="geturl('0987664301')">0978664301</span>
+                            </div>
+                            <div class="link-btn">
+                                <div class="link-btn-chill light-blue" onclick="geturl('0987664301')">COPY</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function geturl(giatri) {
+            var $temp = $("<input>");
+            $("body").append($temp);
+            $temp.val(giatri).select();
+            document.execCommand("copy");
+            $temp.remove();
+            confirm("Copy thành công!");
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" crossorigin="anonymous"></script>
+
+<div class="snowflakes" aria-hidden="true">
+    <div class="snowflake">🍀</div>
+    <div class="snowflake">💛</div>
+    <div class="snowflake">🧡</div>
+    <div class="snowflake">💜</div>
+    <div class="snowflake">💙</div>
+    <div class="snowflake">💚</div>
+    <div class="snowflake">🍃</div>
+    <div class="snowflake">🍂</div>
+    <div class="snowflake">🍥</div>
+    <div class="snowflake">🍑</div>
+    <div class="snowflake">🌸</div>
+    <div class="snowflake">🧧</div>
+    <div class="snowflake">🎁</div>
+
+</div>
+<style>
+    @-webkit-keyframes snowflakes-fall {
+        0% {
+            top: -10%
+        }
+        100% {
+            top: 100%
+        }
+    }
+    
+    @-webkit-keyframes snowflakes-shake {
+        0%,
+        100% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0)
+        }
+        50% {
+            -webkit-transform: translateX(80px);
+                transform: translateX(80px)
+            }
+        }
+        
+        @keyframes snowflakes-fall {
+            0% {
+                top: -10%
+            }
+            100% {
+                top: 100%
+            }
+        }
+        
+        @keyframes snowflakes-shake {
+            0%,
+            100% {
+                transform: translateX(0)
+            }
+            50% {
+                transform: translateX(80px)
+            }
+        }
+        
+        .snowflake {
+            color: rgb(98, 160, 253);
+            font-size: 1.5em;
+            font-family: Arial, sans-serif;
+            text-shadow: 0 0 5px rgba(157, 208, 255, 0.616);
+            position: fixed;
+            top: -100%;
+            z-index: 99999;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            cursor: default;
+            -webkit-animation-name: snowflakes-fall, snowflakes-shake;
+            -webkit-animation-duration: 8s, 1s;
+            -webkit-animation-timing-function: linear, ease-in-out;
+            -webkit-animation-iteration-count: infinite, infinite;
+            -webkit-animation-play-state: running, running;
+            animation-name: snowflakes-fall, snowflakes-shake;
+            animation-duration: 8s, 4s;
+            animation-timing-function: linear, ease-in-out;
+            animation-iteration-count: infinite, infinite;
+            animation-play-state: running, running;
+        }
+        
+        .snowflake:nth-of-type(0) {
+            left: 1%;
+            -webkit-animation-delay: 0s, 0s;
+            animation-delay: 0s, 0s
+        }
+        
+        .snowflake:nth-of-type(1) {
+            left: 10%;
+            -webkit-animation-delay: 1s, 1s;
+            animation-delay: 1s, 1s
+        }
+        
+        .snowflake:nth-of-type(2) {
+            left: 20%;
+            -webkit-animation-delay: 6s, .5s;
+            animation-delay: 6s, .5s
+        }
+        
+        .snowflake:nth-of-type(3) {
+            left: 30%;
+            -webkit-animation-delay: 4s, 2s;
+            animation-delay: 4s, 2s
+        }
+        
+        .snowflake:nth-of-type(4) {
+            left: 40%;
+            -webkit-animation-delay: 2s, 2s;
+            animation-delay: 2s, 2s
+        }
+        
+        .snowflake:nth-of-type(5) {
+            left: 50%;
+            -webkit-animation-delay: 8s, 3s;
+            animation-delay: 8s, 3s
+        }
+        
+        .snowflake:nth-of-type(6) {
+            left: 60%;
+            -webkit-animation-delay: 6s, 2s;
+            animation-delay: 6s, 2s
+        }
+        
+        .snowflake:nth-of-type(7) {
+            left: 70%;
+            -webkit-animation-delay: 2.5s, 1s;
+            animation-delay: 2.5s, 1s
+        }
+        
+        .snowflake:nth-of-type(8) {
+            left: 80%;
+            -webkit-animation-delay: 1s, 0s;
+            animation-delay: 1s, 0s
+        }
+        
+        .snowflake:nth-of-type(9) {
+            left: 90%;
+            -webkit-animation-delay: 3s, 1.5s;
+            animation-delay: 3s, 1.5s
+        }
+        
+        .snowflake:nth-of-type(10) {
+            left: 25%;
+            -webkit-animation-delay: 2s, 0s;
+            animation-delay: 2s, 0s
+        }
+        
+        .snowflake:nth-of-type(11) {
+            left: 65%;
+            -webkit-animation-delay: 4s, 2.5s;
+            animation-delay: 4s, 2.5s
+        }
+    </style>
+</body>
+
+</html>
