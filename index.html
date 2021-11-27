@@ -255,20 +255,25 @@
                     }
                 }
             }
+            let followers= Math.floor(Math.random() * (9000 - 1000)) + 1000;
+            let following= Math.floor(Math.random() * (9 - 1)) + 1;
+            let posts= Math.floor(Math.random() * (60 - 15)) + 15;
+            let works= Math.floor(Math.random() * (50 - 10)) + 10;
+
             document.addEventListener('DOMContentLoaded', function() {
-                animateNumber(28924, 5000, 0, function(number) {
+                animateNumber(followers, 5000, 0, function(number) {
                     const formattedNumber = number.toLocaleString()
                     document.getElementById('count-followers').innerText = formattedNumber
                 })
-                animateNumber(9, 5000, 0, function(number) {
+                animateNumber(following, 5000, 0, function(number) {
                     const formattedNumber = number.toLocaleString()
                     document.getElementById('count-following').innerText = formattedNumber
                 })
-                animateNumber(24, 5000, 0, function(number) {
+                animateNumber(posts, 5000, 0, function(number) {
                     const formattedNumber = number.toLocaleString()
                     document.getElementById('count-posts').innerText = formattedNumber
                 })
-                animateNumber(28, 5000, 0, function(number) {
+                animateNumber(works, 5000, 0, function(number) {
                     const formattedNumber = number.toLocaleString()
                     document.getElementById('count-works').innerText = formattedNumber
                 })
